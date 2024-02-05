@@ -2,14 +2,13 @@ Welcome to your new dbt project!
 
 ### Using the starter project
 
-Try running the following commands:
-- dbt run
-- dbt test
-
-
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+To start with dbt development download the repo to a desktop or project folder.
+Open the downloaded folder in vscode
+Set below environment variables (need for command line dbt run)
+export dbt_username=*******
+export dbt_password=******* 
+export DBT_PROFILES_DIR=/c/Users/SriGujjarlapudi/dbtdemo  (location where profile and profile yml file are located)
+Run below command before you start developing models.
+  dbt debug
+  dbt deps
+If everything works start developing your models.
