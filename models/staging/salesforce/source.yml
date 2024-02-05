@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: salesforce
+    database: SALESFORCE_DATABASE  
+    schema: SALESFORCE
+    tables:
+      - name: account
+      - name: opportunity_field_history
+      - name: opportunity
+      - name: product_2
+      - name: pse_practice_c
+      
+

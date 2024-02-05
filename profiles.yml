@@ -1,0 +1,23 @@
+ahead:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: dwutrtq-gga40671
+      user: "{{ env_var('dbt_username') }}"
+      password: "{{ env_var('dbt_password') }}"
+      role: SYSADMIN
+      database: SALESFORCE_DATABASE
+      schema: "{{ env_var('dbt_username') }}"
+      threads: 1
+      client_session_keep_alive: False
+    prod:
+      type: snowflake
+      account: dwutrtq-gga40671
+      user: "{{ env_var('dbt_username') }}"
+      password: "{{ env_var('dbt_password') }}"
+      role: SYSADMIN
+      database: SALESFORCE_DATABASE
+      schema: "{{ env_var('dbt_username') }}"
+      threads: 1
+      client_session_keep_alive: False

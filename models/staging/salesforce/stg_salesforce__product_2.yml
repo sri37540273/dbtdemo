@@ -1,0 +1,564 @@
+version: 2
+
+models:
+  - name: stg_salesforce__product_2
+    description: ""
+    columns:
+      - name: salesforce_product_id
+        data_type: varchar
+        description: ""
+        tests:
+          - not_null
+          - unique
+
+      - name: product_name
+        data_type: varchar
+        description: ""
+
+      - name: product_code
+        data_type: varchar
+        description: ""
+
+      - name: description
+        data_type: varchar
+        description: ""
+
+      - name: quantity_schedule_type
+        data_type: varchar
+        description: ""
+
+      - name: quantity_installment_period
+        data_type: varchar
+        description: ""
+
+      - name: number_of_quantity_installments
+        data_type: number
+        description: ""
+
+      - name: revenue_schedule_type
+        data_type: varchar
+        description: ""
+
+      - name: revenue_installment_period
+        data_type: varchar
+        description: ""
+
+      - name: number_of_revenue_installments
+        data_type: number
+        description: ""
+
+      - name: is_active
+        data_type: boolean
+        description: ""
+
+      - name: created_date
+        data_type: timestamp_tz
+        description: ""
+
+      - name: created_by_id
+        data_type: varchar
+        description: ""
+
+      - name: last_modified_date
+        data_type: timestamp_tz
+        description: ""
+
+      - name: last_modified_by_id
+        data_type: varchar
+        description: ""
+
+      - name: system_modstamp
+        data_type: timestamp_tz
+        description: ""
+
+      - name: product_family
+        data_type: varchar
+        description: ""
+
+      - name: currency_iso_code
+        data_type: varchar
+        description: ""
+
+      - name: external_id
+        data_type: varchar
+        description: ""
+
+      - name: display_url
+        data_type: varchar
+        description: ""
+
+      - name: quantity_unit_of_measure
+        data_type: varchar
+        description: ""
+
+      - name: is_deleted
+        data_type: boolean
+        description: ""
+
+      - name: is_archived
+        data_type: boolean
+        description: ""
+
+      - name: last_viewed_date
+        data_type: timestamp_tz
+        description: ""
+
+      - name: last_referenced_date
+        data_type: timestamp_tz
+        description: ""
+
+      - name: connection_received_id
+        data_type: varchar
+        description: ""
+
+      - name: connection_sent_id
+        data_type: varchar
+        description: ""
+
+      - name: stock_keeping_unit
+        data_type: varchar
+        description: ""
+
+      - name: product_line_c
+        data_type: varchar
+        description: ""
+
+      - name: manufacturer_c
+        data_type: varchar
+        description: ""
+
+      - name: default_term_months_c
+        data_type: float
+        description: ""
+
+      - name: cogs_c
+        data_type: number
+        description: ""
+
+      - name: infw_taxable_c
+        data_type: varchar
+        description: ""
+
+      - name: on_hand_c
+        data_type: float
+        description: ""
+
+      - name: quickbooks_id_c
+        data_type: varchar
+        description: ""
+
+      - name: quick_books_item_type_c
+        data_type: varchar
+        description: ""
+
+      - name: pse_is_services_product_c
+        data_type: boolean
+        description: ""
+
+      - name: is_asset_c
+        data_type: boolean
+        description: ""
+
+      - name: ahead_cost_c
+        data_type: number
+        description: ""
+
+      - name: customer_price_c
+        data_type: number
+        description: ""
+
+      - name: vendor_list_c
+        data_type: number
+        description: ""
+
+      - name: vendor_c
+        data_type: varchar
+        description: ""
+
+      - name: cost_method_c
+        data_type: varchar
+        description: ""
+
+      - name: item_type_c
+        data_type: varchar
+        description: ""
+
+      - name: purchasing_unit_c
+        data_type: varchar
+        description: ""
+
+      - name: ratio_to_oe_standard_c
+        data_type: float
+        description: ""
+
+      - name: ratio_to_po_standard_c
+        data_type: float
+        description: ""
+
+      - name: sales_unit_c
+        data_type: varchar
+        description: ""
+
+      - name: intacct_item_tax_group_c
+        data_type: varchar
+        description: ""
+
+      - name: asg_manufacturer_c
+        data_type: varchar
+        description: ""
+
+      - name: asg_product_c
+        data_type: varchar
+        description: ""
+
+      - name: budgetary_sku_c
+        data_type: boolean
+        description: ""
+
+      - name: ahd_solution_c
+        data_type: varchar
+        description: ""
+
+      - name: end_of_support_date_c
+        data_type: date
+        description: ""
+
+      - name: requores_sow_c
+        data_type: boolean
+        description: ""
+
+      - name: product_code_external_id_c
+        data_type: varchar
+        description: ""
+
+      - name: maintenance_category_c
+        data_type: varchar
+        description: ""
+
+      - name: solution_category_c
+        data_type: varchar
+        description: ""
+
+      - name: ela_c
+        data_type: boolean
+        description: ""
+
+      - name: in_intacct_c
+        data_type: boolean
+        description: ""
+
+      - name: tax_code_2_c
+        data_type: varchar
+        description: ""
+
+      - name: tax_code_description_c
+        data_type: varchar
+        description: ""
+
+      - name: po_description_c
+        data_type: varchar
+        description: ""
+
+      - name: so_description_c
+        data_type: varchar
+        description: ""
+
+      - name: product_specialty_team
+        data_type: varchar
+        description: ""
+
+      - name: flag_c
+        data_type: boolean
+        description: ""
+
+      - name: cisco_recall_c
+        data_type: boolean
+        description: ""
+
+      - name: cisco_memory_price_increase_c
+        data_type: boolean
+        description: ""
+
+      - name: product_subcategory_c
+        data_type: varchar
+        description: ""
+
+      - name: service_brief_c
+        data_type: varchar
+        description: ""
+
+      - name: t_m_role_c
+        data_type: varchar
+        description: ""
+
+      - name: ahd_solution_category_c
+        data_type: varchar
+        description: ""
+
+      - name: services_product_description_c
+        data_type: varchar
+        description: ""
+
+      - name: pse_forecast_curve_c
+        data_type: varchar
+        description: ""
+
+      - name: cisco_price_change_new_gpl_del_c
+        data_type: number
+        description: ""
+
+      - name: cisco_price_change_may_2018_c
+        data_type: boolean
+        description: ""
+
+      - name: tax_code_changed_c
+        data_type: boolean
+        description: ""
+
+      - name: old_tax_code_c
+        data_type: varchar
+        description: ""
+
+      - name: new_tax_code_c
+        data_type: varchar
+        description: ""
+
+      - name: intacct_error_message_c
+        data_type: varchar
+        description: ""
+
+      - name: intacct_sync_status_c
+        data_type: varchar
+        description: ""
+
+      - name: changed_products_checkbox_c
+        data_type: boolean
+        description: ""
+
+      - name: l_1_sku_c
+        data_type: boolean
+        description: ""
+
+      - name: level_1_recommended_price_c
+        data_type: number
+        description: ""
+
+      - name: manufacturer_sku_c
+        data_type: varchar
+        description: ""
+
+      - name: kgrenewal_available_for_purchase_c
+        data_type: boolean
+        description: ""
+
+      - name: kgrenewal_available_quantity_c
+        data_type: float
+        description: ""
+
+      - name: kgrenewal_best_seller_score_c
+        data_type: float
+        description: ""
+
+      - name: kgrenewal_category_c
+        data_type: varchar
+        description: ""
+
+      - name: kgrenewal_create_assets_c
+        data_type: boolean
+        description: ""
+
+      - name: kgrenewal_do_not_capture_payment_at_checkout_c
+        data_type: boolean
+        description: ""
+
+      - name: kgrenewal_ecommerce_description_c
+        data_type: varchar
+        description: ""
+
+      - name: kgrenewal_ecommerce_name_c
+        data_type: varchar
+        description: ""
+
+      - name: kgrenewal_fourth_image_large_c
+        data_type: varchar
+        description: ""
+
+      - name: kgrenewal_fourth_image_med_c
+        data_type: varchar
+        description: ""
+
+      - name: kgrenewal_fourth_image_small_c
+        data_type: varchar
+        description: ""
+
+      - name: kgrenewal_is_featured_c
+        data_type: boolean
+        description: ""
+
+      - name: kgrenewal_is_product_bundle_parent_c
+        data_type: boolean
+        description: ""
+
+      - name: kgrenewal_is_replaced_by_c
+        data_type: varchar
+        description: ""
+
+      - name: kgrenewal_is_taxable_c
+        data_type: boolean
+        description: ""
+
+      - name: kgrenewal_low_quantity_level_c
+        data_type: float
+        description: ""
+
+      - name: kgrenewal_main_image_large_c
+        data_type: varchar
+        description: ""
+
+      - name: kgrenewal_main_image_med_c
+        data_type: varchar
+        description: ""
+
+      - name: kgrenewal_main_image_small_c
+        data_type: varchar
+        description: ""
+
+      - name: kgrenewal_percent_of_shipping_box_c
+        data_type: float
+        description: ""
+
+      - name: kgrenewal_price_term_type_c
+        data_type: varchar
+        description: ""
+
+      - name: kgrenewal_price_term_c
+        data_type: float
+        description: ""
+
+      - name: kgrenewal_quantity_type_c
+        data_type: varchar
+        description: ""
+
+      - name: kgrenewal_replacement_type_c
+        data_type: varchar
+        description: ""
+
+      - name: kgrenewal_second_image_large_c
+        data_type: varchar
+        description: ""
+
+      - name: kgrenewal_second_image_med_c
+        data_type: varchar
+        description: ""
+
+      - name: kgrenewal_second_image_small_c
+        data_type: varchar
+        description: ""
+
+      - name: kgrenewal_shipping_box_c
+        data_type: varchar
+        description: ""
+
+      - name: kgrenewal_shipping_weight_c
+        data_type: float
+        description: ""
+
+      - name: kgrenewal_subscription_c
+        data_type: boolean
+        description: ""
+
+      - name: kgrenewal_tax_code_c
+        data_type: varchar
+        description: ""
+
+      - name: kgrenewal_third_image_large_c
+        data_type: varchar
+        description: ""
+
+      - name: kgrenewal_third_image_med_c
+        data_type: varchar
+        description: ""
+
+      - name: kgrenewal_third_image_small_c
+        data_type: varchar
+        description: ""
+
+      - name: kgrenewal_e_commerce_enabled_c
+        data_type: boolean
+        description: ""
+
+      - name: unspsc_c
+        data_type: varchar
+        description: ""
+
+      - name: review_required_c
+        data_type: boolean
+        description: ""
+
+      - name: m_a_catalog_c
+        data_type: varchar
+        description: ""
+
+      - name: distributor_product_classification_c
+        data_type: varchar
+        description: ""
+
+      - name: legacy_id_c
+        data_type: varchar
+        description: ""
+
+      - name: model_number_c
+        data_type: varchar
+        description: ""
+
+      - name: legacy_ahead_practice_c
+        data_type: varchar
+        description: ""
+
+      - name: legacy_ahead_sub_practice_c
+        data_type: varchar
+        description: ""
+
+      - name: data_source_1_c
+        data_type: varchar
+        description: ""
+
+      - name: distributor_product_type_c
+        data_type: varchar
+        description: ""
+
+      - name: distributor_manufacturer_c
+        data_type: varchar
+        description: ""
+
+      - name: practice_c
+        data_type: varchar
+        description: ""
+
+      - name: _fivetran_synced
+        data_type: timestamp_tz
+        description: ""
+
+      - name: _fivetran_deleted
+        data_type: boolean
+        description: ""
+
+      - name: external_data_source_id
+        data_type: varchar
+        description: ""
+
+      - name: aws_sku_c
+        data_type: varchar
+        description: ""
+
+      - name: product_gla_override_c
+        data_type: boolean
+        description: ""
+
+      - name: practice_mirror_c
+        data_type: varchar
+        description: ""
+
+      - name: class_c
+        data_type: varchar
+        description: ""

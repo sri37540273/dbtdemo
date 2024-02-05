@@ -1,0 +1,725 @@
+version: 2
+
+models:
+  - name: stg_salesforce__account
+    description: ""
+    columns:
+      - name: id
+        description: ""
+        tests:
+          - unique
+          - not_null
+
+      - name: is_deleted
+        description: ""
+
+      - name: master_record_id
+        description: ""
+
+      - name: name
+        description: ""
+
+      - name: type
+        description: ""
+
+      - name: record_type_id
+        description: ""
+
+      - name: parent_id
+        description: ""
+
+      - name: billing_street
+        description: ""
+
+      - name: billing_city
+        description: ""
+
+      - name: billing_state
+        description: ""
+
+      - name: billing_postal_code
+        description: ""
+
+      - name: billing_country
+        description: ""
+
+      - name: billing_state_code
+        description: ""
+
+      - name: billing_country_code
+        description: ""
+
+      - name: billing_latitude
+        description: ""
+
+      - name: billing_longitude
+        description: ""
+
+      - name: billing_geocode_accuracy
+        description: ""
+
+      - name: shipping_street
+        description: ""
+
+      - name: shipping_city
+        description: ""
+
+      - name: shipping_state
+        description: ""
+
+      - name: shipping_postal_code
+        description: ""
+
+      - name: shipping_country
+        description: ""
+
+      - name: shipping_state_code
+        description: ""
+
+      - name: shipping_country_code
+        description: ""
+
+      - name: shipping_latitude
+        description: ""
+
+      - name: shipping_longitude
+        description: ""
+
+      - name: shipping_geocode_accuracy
+        description: ""
+
+      - name: phone
+        description: ""
+
+      - name: fax
+        description: ""
+
+      - name: website
+        description: ""
+
+      - name: photo_url
+        description: ""
+
+      - name: industry
+        description: ""
+
+      - name: annual_revenue
+        description: ""
+
+      - name: number_of_employees
+        description: ""
+
+      - name: ownership
+        description: ""
+
+      - name: description
+        description: ""
+
+      - name: currency_iso_code
+        description: ""
+
+      - name: owner_id
+        description: ""
+
+      - name: created_date
+        description: ""
+
+      - name: created_by_id
+        description: ""
+
+      - name: last_modified_date
+        description: ""
+
+      - name: last_modified_by_id
+        description: ""
+
+      - name: system_modstamp
+        description: ""
+
+      - name: last_activity_date
+        description: ""
+
+      - name: last_viewed_date
+        description: ""
+
+      - name: last_referenced_date
+        description: ""
+
+      - name: is_partner
+        description: ""
+
+      - name: is_customer_portal
+        description: ""
+
+      - name: channel_program_name
+        description: ""
+
+      - name: channel_program_level_name
+        description: ""
+
+      - name: jigsaw_company_id
+        description: ""
+
+      - name: connection_received_id
+        description: ""
+
+      - name: connection_sent_id
+        description: ""
+
+      - name: target_account_c
+        description: ""
+
+      - name: ahead_relationship_c
+        description: ""
+
+      - name: lead_origin_c
+        description: ""
+
+      - name: forecast_category_c
+        description: ""
+
+      - name: sow_template_c
+        description: ""
+
+      - name: oa_specifications_c
+        description: ""
+
+      - name: account_direct_buy_approval_c
+        description: ""
+
+      - name: dnboptimizer_dnb_d_u_n_s_number_c
+        description: ""
+
+      - name: dnboptimizer_dn_bcompany_record_c
+        description: ""
+
+      - name: vaccination_requirements_c
+        description: ""
+
+      - name: account_ranking_c
+        description: ""
+
+      - name: primary_security_c
+        description: ""
+
+      - name: sow_c
+        description: ""
+
+      - name: purchase_c
+        description: ""
+
+      - name: tax_exemption_cert_on_file_c
+        description: ""
+
+      - name: account_notes_c
+        description: ""
+
+      - name: number_of_servers_including_virtual_c
+        description: ""
+
+      - name: annual_it_budget_2_c
+        description: ""
+
+      - name: percent_of_server_host_virtualized_c
+        description: ""
+
+      - name: server_vendors_solutions_in_use_c
+        description: ""
+
+      - name: terabytes_of_storage_c
+        description: ""
+
+      - name: greatest_storage_challenge_c
+        description: ""
+
+      - name: initiatives_c
+        description: ""
+
+      - name: oem_s_targeting_c
+        description: ""
+
+      - name: priorities_c
+        description: ""
+
+      - name: number_of_users_c
+        description: ""
+
+      - name: product_technologies_c
+        description: ""
+
+      - name: oem_preferences_c
+        description: ""
+
+      - name: storage_c
+        description: ""
+
+      - name: network_c
+        description: ""
+
+      - name: virtualization_c
+        description: ""
+
+      - name: backup_replication_c
+        description: ""
+
+      - name: compute_c
+        description: ""
+
+      - name: orchestration_and_management_c
+        description: ""
+
+      - name: hypervisor_c
+        description: ""
+
+      - name: stack_c
+        description: ""
+
+      - name: business_classification_certification_c
+        description: ""
+
+      - name: state_county_c
+        description: ""
+
+      - name: account_short_name_c
+        description: ""
+
+      - name: il_5_point_test_cisco_date_c
+        description: ""
+
+      - name: default_account_terms_c
+        description: ""
+
+      - name: credit_hold_c
+        description: ""
+
+      - name: invoicing_notes_c
+        description: ""
+
+      - name: il_5_point_test_cisco_c
+        description: ""
+
+      - name: il_5_point_test_emc_date_c
+        description: ""
+
+      - name: procurement_notes_c
+        description: ""
+
+      - name: related_accounts_c
+        description: ""
+
+      - name: political_notes_c
+        description: ""
+
+      - name: standard_discounts_c
+        description: ""
+
+      - name: major_problems_issues_c
+        description: ""
+
+      - name: top_it_objectives_and_initiatives_c
+        description: ""
+
+      - name: top_corporate_objectives_and_initiatives_c
+        description: ""
+
+      - name: current_year_operating_budget_c
+        description: ""
+
+      - name: current_year_capital_budget_c
+        description: ""
+
+      - name: current_year_total_it_budget_c
+        description: ""
+
+      - name: sector_c
+        description: ""
+
+      - name: fiscal_year_end_c
+        description: ""
+
+      - name: il_5_point_test_emc_c
+        description: ""
+
+      - name: sales_strategy_overview_c
+        description: ""
+
+      - name: server_virtualization_c
+        description: ""
+
+      - name: cloud_provider_c
+        description: ""
+
+      - name: number_of_physical_servers_c
+        description: ""
+
+      - name: number_of_virtual_servers_c
+        description: ""
+
+      - name: primary_resellers_c
+        description: ""
+
+      - name: consulting_primary_c
+        description: ""
+
+      - name: primary_network_c
+        description: ""
+
+      - name: primary_storage_c
+        description: ""
+
+      - name: primary_backup_c
+        description: ""
+
+      - name: primary_server_c
+        description: ""
+
+      - name: il_5_point_test_vmware_date_c
+        description: ""
+
+      - name: logistics_notes_c
+        description: ""
+
+      - name: targeted_partners_c
+        description: ""
+
+      - name: il_5_point_test_vmware_c
+        description: ""
+
+      - name: acquisition_date_owner_c
+        description: ""
+
+      - name: dscorgpkg_conflict_c
+        description: ""
+
+      - name: dscorgpkg_do_3_yr_employees_growth_c
+        description: ""
+
+      - name: it_employees_c
+        description: ""
+
+      - name: pse_services_billing_time_period_type_c
+        description: ""
+
+      - name: it_budget_c
+        description: ""
+
+      - name: mql_c
+        description: ""
+
+      - name: acquisition_date_c
+        description: ""
+
+      - name: duns_c
+        description: ""
+
+      - name: data_source_1_c
+        description: ""
+
+      - name: exclude_from_ost_automation_c
+        description: ""
+
+      - name: contract_notes_c
+        description: ""
+
+      - name: dscorgpkg_do_3_yr_sales_growth_c
+        description: ""
+
+      - name: dscorgpkg_deleted_from_discover_org_c
+        description: ""
+
+      - name: dscorgpkg_discover_org_created_on_c
+        description: ""
+
+      - name: dscorgpkg_discover_org_first_update_c
+        description: ""
+
+      - name: dscorgpkg_discover_org_full_country_name_c
+        description: ""
+
+      - name: dscorgpkg_discover_org_id_c
+        description: ""
+
+      - name: partner_portal_address_c
+        description: ""
+
+      - name: dscorgpkg_discover_org_last_update_c
+        description: ""
+
+      - name: company_size_c
+        description: ""
+
+      - name: quote_language_c
+        description: ""
+
+      - name: dscorgpkg_discover_org_state_full_name_c
+        description: ""
+
+      - name: dscorgpkg_discover_org_technologies_c
+        description: ""
+
+      - name: dscorgpkg_exclude_update_c
+        description: ""
+
+      - name: default_services_terms_c
+        description: ""
+
+      - name: credit_check_notes_c
+        description: ""
+
+      - name: aws_c
+        description: ""
+
+      - name: company_id_discover_org_c
+        description: ""
+
+      - name: pse_erp_worker_correlation_id_c
+        description: ""
+
+      - name: dscorgpkg_external_discover_org_id_c
+        description: ""
+
+      - name: dscorgpkg_fiscal_year_end_c
+        description: ""
+
+      - name: dscorgpkg_fortune_rank_c
+        description: ""
+
+      - name: dscorgpkg_it_budget_c
+        description: ""
+
+      - name: dscorgpkg_it_employees_c
+        description: ""
+
+      - name: dscorgpkg_lead_source_c
+        description: ""
+
+      - name: dscorgpkg_locked_by_user_c
+        description: ""
+
+      - name: dscorgpkg_naics_codes_c
+        description: ""
+
+      - name: dscorgpkg_ownership_c
+        description: ""
+
+      - name: dscorgpkg_sic_codes_c
+        description: ""
+
+      - name: final_expense_total_c
+        description: ""
+
+      - name: accrued_un_approved_expense_total_c
+        description: ""
+
+      - name: address_intacct_error_message_c
+        description: ""
+
+      - name: address_intacct_sync_status_c
+        description: ""
+
+      - name: corporate_address_in_intacct_c
+        description: ""
+
+      - name: intacct_error_message_c
+        description: ""
+
+      - name: intacct_sync_status_c
+        description: ""
+
+      - name: partner_team_influenced_c
+        description: ""
+
+      - name: partner_team_influenced_notes_c
+        description: ""
+
+      - name: intacct_customer_record_no_c
+        description: ""
+
+      - name: discover_org_industry_c
+        description: ""
+
+      - name: discover_org_geo_c
+        description: ""
+
+      - name: pse_add_beis_to_existing_batches_c
+        description: ""
+
+      - name: acs_acquisition_date_c
+        description: ""
+
+      - name: purchase_order_required_c
+        description: ""
+
+      - name: written_t_e_pre_approvals_required_c
+        description: ""
+
+      - name: customer_partner_c
+        description: ""
+
+      - name: default_global_pm_time_c
+        description: ""
+
+      - name: engagio_engaged_people_c
+        description: ""
+
+      - name: engagio_engagement_minutes_last_3_months_c
+        description: ""
+
+      - name: engagio_engagement_minutes_last_7_days_c
+        description: ""
+
+      - name: engagio_first_engagement_date_c
+        description: ""
+
+      - name: engagio_mqadate_c
+        description: ""
+
+      - name: engagio_number_of_people_c
+        description: ""
+
+      - name: engagio_status_c
+        description: ""
+
+      - name: engagio_web_visits_last_3_months_c
+        description: ""
+
+      - name: cisco_smart_account_id_c
+        description: ""
+
+      - name: billing_portal_cost_percent_c
+        description: ""
+
+      - name: billing_portal_c
+        description: ""
+
+      - name: kgrenewal_balance_c
+        description: ""
+
+      - name: kgrenewal_credit_limit_c
+        description: ""
+
+      - name: kgrenewal_effective_date_c
+        description: ""
+
+      - name: kgrenewal_enabled_checkout_payment_types_c
+        description: ""
+
+      - name: kgrenewal_is_pending_checkout_completion_c
+        description: ""
+
+      - name: kgrenewal_payment_terms_c
+        description: ""
+
+      - name: kgrenewal_pricebook_2_segment_c
+        description: ""
+
+      - name: kgrenewal_pricebook_2_c
+        description: ""
+
+      - name: kgrenewal_primary_subscription_c
+        description: ""
+
+      - name: kgrenewal_tax_customer_usage_code_c
+        description: ""
+
+      - name: kgrenewal_tax_exempt_c
+        description: ""
+
+      - name: legacy_created_date_c
+        description: ""
+
+      - name: legacy_salesforce_id_c
+        description: ""
+
+      - name: tax_identification_number_c
+        description: ""
+
+      - name: account_region_override_value_c
+        description: ""
+
+      - name: account_region_override_c
+        description: ""
+
+      - name: intacct_location_override_value_c
+        description: ""
+
+      - name: legacy_account_region_c
+        description: ""
+
+      - name: account_auto_number_id_c
+        description: ""
+
+      - name: ffex_legal_name_c
+        description: ""
+
+      - name: managed_services_customer_c
+        description: ""
+
+      - name: cos_notes_c
+        description: ""
+
+      - name: customer_bill_to_email_c
+        description: ""
+
+      - name: _fivetran_synced
+        description: ""
+
+      - name: invoice_template_c
+        description: ""
+
+      - name: us_citizenship_requirement_c
+        description: ""
+
+      - name: onboarding_documents_attached_c
+        description: ""
+
+      - name: drug_test_required_c
+        description: ""
+
+      - name: type_of_drug_test_required_c
+        description: ""
+
+      - name: subcontractor_use_allowed_c
+        description: ""
+
+      - name: background_check_required_c
+        description: ""
+
+      - name: onboarding_notes_c
+        description: ""
+
+      - name: subcontractor_use_written_approval_req_c
+        description: ""
+
+      - name: offshore_resourcing_not_allowed_c
+        description: ""
+
+      - name: onboarding_training_needed_c
+        description: ""
+
+      - name: _fivetran_deleted
+        description: ""
+
+      - name: white_glove_account_c
+        description: ""
+
+      - name: mpa_expiration_date_c
+        description: ""
+
+      - name: quote_to_cash_account_review_c
+        description: ""
+
+      - name: resource_type_c
+        description: ""
+
+      - name: approved_integration_facility_c
+        description: ""
+
+      - name: invoice_option_c
+        description: ""
+
+      - name: timecard_portal_c
+        description: ""
+
+      - name: client_invoicing_portal_details_c
+        description: ""
